@@ -1,0 +1,46 @@
+/* styles.css */
+
+/* Zentriere den Container */
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start; /* Oben ausrichten */
+    height: 100vh; /* Vollständige Bildschirmhöhe */
+    padding-top: 20px; /* Platz oben */
+}
+
+/* Stil für den beweglichen Namen */
+#movingName {
+    font-family: 'Arial', sans-serif;
+    font-size: 4rem;
+    text-transform: uppercase;
+    color: #333;
+    animation: bounceName 4s infinite linear; /* Animation für den Namen */
+}
+
+@keyframes bounceName {
+    0%, 100% {
+        transform: translateY(0); /* Zurücksetzen auf die ursprüngliche Position */
+    }
+    50% {
+        transform: translateY(-20px); /* Ein wenig nach oben verschieben */
+    }
+}
+
+/* Stil für den Abschnitt mit den aktuellen Bildern */
+.image-section {
+    margin-top: 20px;
+    text-align: center; /* Zentriere den Text */
+}
+
+.image-section h2 {
+    color: #333; /* Farbe des Abschnittstitels */
+}
+
+/* Farbverlauf für den Text */
+.rainbow-text {
+    background: linear-gradient(to right, rgb(126, 43, 126), indigo, blue, green, rgb(255, 196, 0), orange, red);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
